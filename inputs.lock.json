@@ -4,7 +4,7 @@
     "spec": {
       "name": "colombia-clara-spec",
       "version": "0.2.0",
-      "commit": "7d6f5aa3984d26f640b588b60104acbb218464ab",
+      "commit": "84acc0a204a8effef21ace2babf561b36387a32c",
       "zipSha256": "e781c75b9a724dd9f8ff4a254319afb49039cb74e3adb58df98ffab73776b784",
       "treeSha256": "97e87a050b3b6ee669a5636c157faabd06f6aca2980193fdbf4e3a6697a71a8e",
       "schemaSetSha256": "e5580b30ad8a10c4cd25caa1e326c1473f1859b661ae404594f6ab1b9e859165",
