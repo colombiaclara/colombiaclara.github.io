@@ -29,6 +29,7 @@ jobs:
           repository: ${{ github.repository_owner }}/colombia-clara-spec
           ref: 7d6f5aa3984d26f640b588b60104acbb218464ab
           persist-credentials: false
+          token: ${{ secrets.CROSS_REPO_READ_TOKEN }}
           path: colombia-clara-spec
 
       - name: Checkout Knowledge at locked commit
@@ -36,6 +37,7 @@ jobs:
         with:
           repository: ${{ github.repository_owner }}/colombia-clara-knowledge
           ref: 22b20be3ff5758d3d033612362c1c474c30d9f7f
+          token: ${{ secrets.CROSS_REPO_READ_TOKEN }}
           persist-credentials: false
           path: colombia-clara-knowledge
 
