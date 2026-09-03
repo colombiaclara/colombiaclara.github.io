@@ -23,7 +23,7 @@ import {
 import type { BuildOptions, MediaAsset, PublicPage } from '../types/canonical.ts';
 
 const WEB_VERSION = '0.1.0';
-const AGENTS_COMMIT = '3c17fd710b45a4d150d584386b30bebc05545926';
+const AGENTS_COMMIT = 'ff0f1753d1a5a8867425f1a6143fb44a4f26c574';
 
 function outputPathForRoute(root: string, route: string): string {
   if (route === '/404.html') return path.join(root, '404.html');
