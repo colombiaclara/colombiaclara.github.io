@@ -13,7 +13,7 @@
     "knowledge": {
       "name": "colombia-clara-knowledge",
       "version": "0.1.0",
-      "commit": "0f2f1eee2b06b75b0c9563bfd074244ad2d18670",
+      "commit": "963b7d292da3d928ecd2322bd54a6750e485dd81",
       "zipSha256": "1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be",
       "treeSha256": "ec9d7cd0cf1a92cba868ee04988399a68153dd272169249b71581a11fecaa6aa",
       "role": "canonical-content"
@@ -21,9 +21,9 @@
     "agents": {
       "name": "colombia-clara-agents",
       "version": "0.1.0",
-      "commit": "9dfa75521d7f8f4ecc792d5e730c5fe250829e8f",
+      "commit": "52ec404fa0161fad443eb887c35794e838925133",
       "zipSha256": "ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123",
-      "treeSha256": "c436dc1e63678d2302c59e66a96874b07c5bf5c2578ed5123f5e99c2dfcaf50f",
+      "treeSha256": "fa8d045af7298a21e23a45688986384c8c55f484bc1c0c73c483b8ce95e7c7d1",
       "role": "automation-runtime"
     }
   }

@@ -5,7 +5,7 @@ import { canonicalJson, sha256 } from '../src/build/canonical-json.ts';
 import type { BuildOptions } from '../src/types/canonical.ts';
 
 export const SPEC_COMMIT = '8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe';
-export const KNOWLEDGE_COMMIT = '0f2f1eee2b06b75b0c9563bfd074244ad2d18670';
+export const KNOWLEDGE_COMMIT = '963b7d292da3d928ecd2322bd54a6750e485dd81';
 export const WEB_COMMIT = '1111111111111111111111111111111111111111';
 
 async function json(file: string, value: unknown): Promise<void> {

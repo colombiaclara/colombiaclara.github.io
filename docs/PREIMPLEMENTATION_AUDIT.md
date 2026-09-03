@@ -10,7 +10,7 @@ Fecha: 2026-09-02. Alcance: ZIP de release recibidos para Spec v0.2.0, Knowledge
 | Knowledge | `1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be` | Coincide |
 | Agents | `ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123` | Coincide |
 
-Los ZIP no incluyen `.git`; por tanto prueban integridad del release recibido, pero no demuestran por sí solos la existencia de los commits declarados. Los manifiestos y locks declaran respectivamente `8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe`, `0f2f1eee2b06b75b0c9563bfd074244ad2d18670` y `9dfa75521d7f8f4ecc792d5e730c5fe250829e8f`. CI exige checkouts Git exactos.
+Los ZIP no incluyen `.git`; por tanto prueban integridad del release recibido, pero no demuestran por sí solos la existencia de los commits declarados. Los manifiestos y locks declaran respectivamente `8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe`, `963b7d292da3d928ecd2322bd54a6750e485dd81` y `52ec404fa0161fad443eb887c35794e838925133`. CI exige checkouts Git exactos.
 
 ## Validaciones ejecutadas
 
