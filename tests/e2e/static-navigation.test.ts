@@ -15,7 +15,9 @@ test('all primary routes are real HTML and remain useful without JavaScript', as
     assert.match(html, /Saltar al contenido/);
     assert.match(html, /<h1>/);
   }
-  const article = await readFile(path.join(options.outputPath, routes[1]), 'utf8');
+  const articleRoute = routes[1];
+  assert.ok(articleRoute);
+  const article = await readFile(path.join(options.outputPath, articleRoute), 'utf8');
   assert.match(article, /Una afirmación técnica verificable/);
   assert.match(article, /Fuente técnica de prueba/);
   assert.match(article, /42/);
