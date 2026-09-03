@@ -5,7 +5,7 @@ import path from 'node:path';
 const lock = JSON.parse(await readFile('inputs.lock.json', 'utf8'));
 const expected = {
   spec: ['0.2.0', '84acc0a204a8effef21ace2babf561b36387a32c', 'e781c75b9a724dd9f8ff4a254319afb49039cb74e3adb58df98ffab73776b784'],
-  knowledge: ['0.1.0', '22b20be3ff5758d3d033612362c1c474c30d9f7f', '1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be'],
+  knowledge: ['0.1.0', '8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe', '1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be'],
   agents: ['0.1.0', '76d3ff84d2cacffc4604affc4f96fbecc874b4f6', 'ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123']
 };
 

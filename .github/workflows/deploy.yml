@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           repository: ${{ github.repository_owner }}/colombia-clara-spec
-          ref: 7d6f5aa3984d26f640b588b60104acb  b218464ab
+          ref: 8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe
           persist-credentials: false
           path: colombia-clara-spec
 
@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           repository: ${{ github.repository_owner }}/colombia-clara-knowledge
-          ref: 22b20be3ff5758d3d033612362c1c474c30d9f7f
+          ref: 8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe
           persist-credentials: false
           path: colombia-clara-knowledge
 
@@ -59,7 +59,7 @@ jobs:
           SPEC_PATH: ../colombia-clara-spec
           KNOWLEDGE_PATH: ../colombia-clara-knowledge
           SPEC_COMMIT: 84acc0a204a8effef21ace2babf561b36387a32c
-          KNOWLEDGE_COMMIT: 22b20be3ff5758d3d033612362c1c474c30d9f7f
+          KNOWLEDGE_COMMIT: 8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe
           WEB_COMMIT: ${{ github.sha }}
           SOURCE_DATE_EPOCH: ${{ github.event.repository.pushed_at }}
           PUBLIC_BASE_URL: ${{ inputs.public_base_url }}

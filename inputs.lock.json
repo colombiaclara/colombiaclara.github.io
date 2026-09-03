@@ -13,7 +13,7 @@
     "knowledge": {
       "name": "colombia-clara-knowledge",
       "version": "0.1.0",
-      "commit": "22b20be3ff5758d3d033612362c1c474c30d9f7f",
+      "commit": "8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe",
       "zipSha256": "1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be",
       "treeSha256": "140d24e8455ebf5ff49693ec4f348b45de73965b3be9ba671d10a87557dab7db",
       "role": "canonical-content"

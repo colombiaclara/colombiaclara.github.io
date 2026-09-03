@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           repository: ${{ github.repository_owner }}/colombia-clara-knowledge
-          ref: 22b20be3ff5758d3d033612362c1c474c30d9f7f
+          ref: 8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe
           token: ${{ secrets.CROSS_REPO_READ_TOKEN }}
           persist-credentials: false
           path: colombia-clara-knowledge
