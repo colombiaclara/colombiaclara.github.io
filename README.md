@@ -9,7 +9,7 @@ El filtro es cerrado: solo entra un artículo con `status: PUBLISHED`, `revision
 ## Requisitos
 
 - Node `24.19.0` exacto (`.nvmrc` y `package.json`).
-- Checkouts hermanos de Spec `8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe` y Knowledge `963b7d292da3d928ecd2322bd54a6750e485dd81`.
+- Checkouts hermanos de Spec `8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe` y Knowledge `10202813c19357533fab0d85e309574bacd7e143`.
 - `npm ci` para instalar TypeScript `5.9.2` fijado.
 
 ## Inicio rápido

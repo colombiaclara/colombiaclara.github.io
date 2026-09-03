@@ -13,17 +13,17 @@
     "knowledge": {
       "name": "colombia-clara-knowledge",
       "version": "0.1.0",
-      "commit": "963b7d292da3d928ecd2322bd54a6750e485dd81",
+      "commit": "10202813c19357533fab0d85e309574bacd7e143",
       "zipSha256": "1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be",
-      "treeSha256": "ec9d7cd0cf1a92cba868ee04988399a68153dd272169249b71581a11fecaa6aa",
+      "treeSha256": "347f6c0f6a8e9fb69d5e02ee91ef09bddd4281f09605f7a5f80587b4510dff95",
       "role": "canonical-content"
     },
     "agents": {
       "name": "colombia-clara-agents",
       "version": "0.1.0",
-      "commit": "9260ab7f588725cb9788ce3329da1063b57638d0",
+      "commit": "3c17fd710b45a4d150d584386b30bebc05545926",
       "zipSha256": "ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123",
-      "treeSha256": "6944c4661befe49c4be546be8ebbeaac9a5db5d25a9d4f524c878739fe320ad9",
+      "treeSha256": "f6cf8f3bc992696e392936d3fa0c42c7e5acd2ee7dd7498f9d701c35c4e79b50",
       "role": "automation-runtime"
     }
   }

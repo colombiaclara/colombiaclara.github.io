@@ -5,8 +5,8 @@ import path from 'node:path';
 const lock = JSON.parse(await readFile('inputs.lock.json', 'utf8'));
 const expected = {
   spec: ['0.2.0', '8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe', 'e781c75b9a724dd9f8ff4a254319afb49039cb74e3adb58df98ffab73776b784'],
-  knowledge: ['0.1.0', '963b7d292da3d928ecd2322bd54a6750e485dd81', '1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be'],
-  agents: ['0.1.0', '9260ab7f588725cb9788ce3329da1063b57638d0', 'ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123']
+  knowledge: ['0.1.0', '10202813c19357533fab0d85e309574bacd7e143', '1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be'],
+  agents: ['0.1.0', '3c17fd710b45a4d150d584386b30bebc05545926', 'ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123']
 };
 
 for (const [name, values] of Object.entries(expected)) {
