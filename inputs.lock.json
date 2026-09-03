@@ -17,13 +17,6 @@
       "zipSha256": "1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be",
       "treeSha256": "140d24e8455ebf5ff49693ec4f348b45de73965b3be9ba671d10a87557dab7db",
       "role": "canonical-content"
-    },
-    "agents": {
-      "name": "colombia-clara-agents",
-      "version": "0.1.0",
-      "commit": "76d3ff84d2cacffc4604affc4f96fbecc874b4f6",
-      "zipSha256": "ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123",
-      "role": "operational-compatibility"
     }
   }
 }
