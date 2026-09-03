@@ -13,7 +13,7 @@ for (const [name, values] of Object.entries(expected)) {
   const item = lock.inputs[name];
   if (!item || item.version !== values[0] || item.commit !== values[1] || item.zipSha256 !== values[2]) throw new Error(`inputs.lock.json mismatch: ${name}`);
 }
-if (process.version !== 'v24.19.0') throw new Error(`Node v24.19.0 required, received ${process.version}`);
+if (process.version !== 'v24.20.0') throw new Error(`Node v24.19.0 required, received ${process.version}`);
 
 if (process.env.INPUT_ZIP_DIR) {
   const files = {
