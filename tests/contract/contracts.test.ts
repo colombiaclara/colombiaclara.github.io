@@ -10,7 +10,7 @@ test('input lock pins all three repository identities', async () => {
   assert.equal(lock.inputs.spec.commit, SPEC_COMMIT);
   assert.equal(lock.inputs.knowledge.commit.length, 40);
   assert.equal(lock.inputs.agents.commit.length, 40);
-  assert.equal(lock.inputs.spec.schemaSetSha256, 'e5580b30ad8a10c4cd25caa1e326c1473f1859b661ae404594f6ab1b9e859165');
+  assert.equal(lock.inputs.spec.schemaSetSha256, '12054b877cd93ef72591a3cf331fb6c50dc368f666ec355ddbf1af2db8b7a5f4');
 });
 
 test('Web contains no copied canonical schemas', async () => {

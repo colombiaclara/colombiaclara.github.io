@@ -10,13 +10,13 @@ Fecha: 2026-09-02. Alcance: ZIP de release recibidos para Spec v0.2.0, Knowledge
 | Knowledge | `1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be` | Coincide |
 | Agents | `ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123` | Coincide |
 
-Los ZIP no incluyen `.git`; por tanto prueban integridad del release recibido, pero no demuestran por sí solos la existencia de los commits declarados. Los manifiestos y locks declaran respectivamente `84acc0a204a8effef21ace2babf561b36387a32c`, `8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe` y `76d3ff84d2cacffc4604affc4f96fbecc874b4f6`. CI exige checkouts Git exactos.
+Los ZIP no incluyen `.git`; por tanto prueban integridad del release recibido, pero no demuestran por sí solos la existencia de los commits declarados. Los manifiestos y locks declaran respectivamente `8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe`, `0f2f1eee2b06b75b0c9563bfd074244ad2d18670` y `9dfa75521d7f8f4ecc792d5e730c5fe250829e8f`. CI exige checkouts Git exactos.
 
 ## Validaciones ejecutadas
 
 - Spec: `npm ci`; `npm test`. Resultado: 31 schemas resueltos, ejemplos positivos/negativos para 30 entidades, 10 falsos positivos rechazados, enlaces de 104 Markdown comprobados y manifiesto de 165 archivos válido.
 - Knowledge: `npm ci`; `npm run build`; `npm test`. Resultado: 29 entidades y 1 Article válidos, 8 mutaciones negativas rechazadas, 7 archivos derivados reproducibles con digest `3896f79667ed26e290431ae51cf449613ea03dbb4498b1d9000e86f82b9a9588`, manifiesto de 64 archivos válido.
-- El `spec.lock.json` de Knowledge coincide con Spec v0.2.0, commit, árbol lógico `97e87a…a8e` y conjunto de schemas `e5580b…9165`.
+- El `spec.lock.json` de Knowledge coincide con Spec v0.2.0, commit, árbol lógico `440fe8…0214` y conjunto de schemas `12054b…a5f4`.
 - El único Article real tiene estado `REVIEW`. Su asset tiene `license: RIGHTS_REVIEW_REQUIRED` y `usageRights` explícitamente no publicable.
 - La única dependencia de desarrollo de Web es TypeScript 5.9.2 (Apache-2.0); `npm audit --audit-level=high` informó 0 vulnerabilidades al cerrar la implementación.
 
