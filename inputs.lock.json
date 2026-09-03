@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "inputs": {
+    "spec": {
+      "name": "colombia-clara-spec",
+      "version": "0.2.0",
+      "commit": "7d6f5aa3984d26f640b588b60104acbb218464ab",
+      "zipSha256": "e781c75b9a724dd9f8ff4a254319afb49039cb74e3adb58df98ffab73776b784",
+      "treeSha256": "97e87a050b3b6ee669a5636c157faabd06f6aca2980193fdbf4e3a6697a71a8e",
+      "schemaSetSha256": "e5580b30ad8a10c4cd25caa1e326c1473f1859b661ae404594f6ab1b9e859165",
+      "role": "normative-authority"
+    },
+    "knowledge": {
+      "name": "colombia-clara-knowledge",
+      "version": "0.1.0",
+      "commit": "22b20be3ff5758d3d033612362c1c474c30d9f7f",
+      "zipSha256": "1e63ca4f832f3c56b7443557c48c963447fe27a670117f94a40b5dc01369c7be",
+      "treeSha256": "140d24e8455ebf5ff49693ec4f348b45de73965b3be9ba671d10a87557dab7db",
+      "role": "canonical-content"
+    },
+    "agents": {
+      "name": "colombia-clara-agents",
+      "version": "0.1.0",
+      "commit": "76d3ff84d2cacffc4604affc4f96fbecc874b4f6",
+      "zipSha256": "ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123",
+      "role": "operational-compatibility"
+    }
+  }
+}

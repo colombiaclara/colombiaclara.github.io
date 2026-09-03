@@ -1,0 +1,4 @@
+* @colombia-clara/editors
+/.github/ @colombia-clara/security
+/src/content/ @colombia-clara/editors @colombia-clara/security
+/inputs.lock.json @colombia-clara/editors @colombia-clara/security

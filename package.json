@@ -1,0 +1,40 @@
+{
+  "name": "colombia-clara-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.20.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node --experimental-strip-types src/build/cli.ts",
+    "preview": "node scripts/serve.mjs",
+    "format:check": "node scripts/format.mjs",
+    "lint": "node scripts/lint.mjs",
+    "typecheck": "tsc --noEmit",
+    "validate:inputs": "node scripts/validate-inputs.mjs",
+    "validate:knowledge": "node scripts/validate-knowledge.mjs",
+    "test": "npm run test:unit && npm run test:contract && npm run test:integration && npm run test:e2e && npm run test:a11y && npm run test:security",
+    "test:unit": "node scripts/run-suite.mjs unit",
+    "test:contract": "node scripts/run-suite.mjs contract",
+    "test:integration": "node scripts/run-suite.mjs integration",
+    "test:e2e": "node scripts/run-suite.mjs e2e",
+    "test:a11y": "node scripts/run-suite.mjs accessibility",
+    "test:security": "node scripts/run-suite.mjs security",
+    "test:coverage": "node --experimental-strip-types --experimental-test-coverage --test --test-coverage-lines=90 --test-coverage-functions=90 --test-coverage-branches=85 tests/unit/*.test.ts tests/contract/*.test.ts tests/integration/*.test.ts tests/security/*.test.ts",
+    "check:links": "node scripts/check-output.mjs links",
+    "check:seo": "node scripts/check-output.mjs seo",
+    "check:performance": "node scripts/check-output.mjs performance",
+    "check:determinism": "node scripts/check-determinism.mjs",
+    "manifest:write": "node scripts/manifest.mjs --write",
+    "validate:manifest": "node scripts/manifest.mjs",
+    "check": "npm run validate:inputs && npm run validate:knowledge && npm run format:check && npm run lint && npm run typecheck && npm test && npm run test:coverage && npm run build && npm run check:links && npm run check:seo && npm run check:performance && npm run check:determinism && npm run validate:manifest"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "npm": "^12.0.2"
+  }
+}
