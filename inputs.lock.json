@@ -21,9 +21,9 @@
     "agents": {
       "name": "colombia-clara-agents",
       "version": "0.1.0",
-      "commit": "52ec404fa0161fad443eb887c35794e838925133",
+      "commit": "9260ab7f588725cb9788ce3329da1063b57638d0",
       "zipSha256": "ca7e7f46cab6fe1bb14eeb0557d6b61967d53efa88ddc06fb0fa011324965123",
-      "treeSha256": "fa8d045af7298a21e23a45688986384c8c55f484bc1c0c73c483b8ce95e7c7d1",
+      "treeSha256": "6944c4661befe49c4be546be8ebbeaac9a5db5d25a9d4f524c878739fe320ad9",
       "role": "automation-runtime"
     }
   }
