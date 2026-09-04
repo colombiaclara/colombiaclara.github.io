@@ -7,6 +7,14 @@ on:
         description: Approved absolute Pages URL
         required: true
         type: string
+      spec_commit:
+        description: Exact compatible Spec commit
+        required: true
+        type: string
+      knowledge_commit:
+        description: Exact merged Knowledge commit to publish
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -31,7 +39,8 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           repository: ${{ github.repository_owner }}/colombia-clara-spec
-          ref: 10202813c19357533fab0d85e309574bacd7e143
+          ref: ${{ inputs.spec_commit }}
+          token: ${{ secrets.CROSS_REPO_READ_TOKEN }}
           persist-credentials: false
           path: colombia-clara-spec
 
@@ -39,7 +48,8 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           repository: ${{ github.repository_owner }}/colombia-clara-knowledge
-          ref: 8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe
+          ref: ${{ inputs.knowledge_commit }}
+          token: ${{ secrets.CROSS_REPO_READ_TOKEN }}
           persist-credentials: false
           path: colombia-clara-knowledge
 
@@ -58,8 +68,8 @@ jobs:
           PREVIEW_UNPUBLISHED: "false"
           SPEC_PATH: ../colombia-clara-spec
           KNOWLEDGE_PATH: ../colombia-clara-knowledge
-          SPEC_COMMIT: 8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe
-          KNOWLEDGE_COMMIT: 10202813c19357533fab0d85e309574bacd7e143
+          SPEC_COMMIT: ${{ inputs.spec_commit }}
+          KNOWLEDGE_COMMIT: ${{ inputs.knowledge_commit }}
           WEB_COMMIT: ${{ github.sha }}
           SOURCE_DATE_EPOCH: ${{ github.event.repository.pushed_at }}
           PUBLIC_BASE_URL: ${{ inputs.public_base_url }}
@@ -105,8 +115,10 @@ jobs:
             --arg knowledge "$(jq -r .knowledgeCommit dist/build-info.json)" \
             --arg web "$WEB_COMMIT" --arg digest "$(jq -r .rootDigest dist/build-manifest.json)" \
             --arg base "$PUBLIC_BASE_URL" --arg deployed "$(date -u +%FT%TZ)" \
-            --argjson urls "$(jq '[.publishedArticles[].url]' dist/build-info.json)" \
-            '{schemaVersion:"1.0.0",status:"VERIFIED",workflowRunId:$run,workflowRunAttempt:$attempt,specCommit:$spec,knowledgeCommit:$knowledge,webCommit:$web,buildManifestDigest:$digest,publicBaseUrl:$base,articleUrls:$urls,deployedAt:$deployed,httpVerification:{status:"SUCCESS"}}' > deployment-evidence.json
+            --argjson articles "$(jq '[.publishedArticles[] | {articleId:.id,url:.url}]' dist/build-info.json)" \
+            --argjson checked "$(jq -n --arg base "$PUBLIC_BASE_URL" '[($base+"/build-info.json"),($base+"/build-manifest.json")]')" \
+            '{schemaVersion:"1.0.0",status:"VERIFIED",workflowRunId:$run,workflowRunAttempt:($attempt|tonumber),specCommit:$spec,knowledgeCommit:$knowledge,webCommit:$web,buildManifest:{algorithm:"CC-BUILD-SHA256-V1",rootDigest:$digest},publicBaseUrl:$base,publishedArticles:$articles,deployedAt:$deployed,httpVerification:{verified:true,statusCode:200,checkedUrls:$checked},artifactUrl:("https://github.com/${{ github.repository }}/actions/runs/"+$run)}' > deployment-evidence.json
+          SPEC_PATH=../colombia-clara-spec node scripts/validate-deployment-evidence.mjs deployment-evidence.json
 
       - name: Preserve deployment evidence
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

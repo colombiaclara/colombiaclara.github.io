@@ -43,6 +43,7 @@ Generated canonical source inventory. Excludes Git metadata, dependencies, build
 - `scripts/manifest.mjs`
 - `scripts/run-suite.mjs`
 - `scripts/serve.mjs`
+- `scripts/validate-deployment-evidence.mjs`
 - `scripts/validate-inputs.mjs`
 - `scripts/validate-knowledge.mjs`
 - `src/browser/analytics/noop.ts`

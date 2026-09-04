@@ -2,7 +2,7 @@
 
 ## Build local
 
-1. Compruebe Node `24.19.0` y los commits de los checkouts hermanos.
+1. Compruebe Node `24.20.0` y los commits de Spec y Knowledge.
 2. Ejecute `npm ci`.
 3. Ejecute `SPEC_PATH=… KNOWLEDGE_PATH=… npm run check`.
 4. Abra `npm run preview` solo para inspección local.

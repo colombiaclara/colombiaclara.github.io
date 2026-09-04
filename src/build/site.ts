@@ -23,7 +23,6 @@ import {
 import type { BuildOptions, MediaAsset, PublicPage } from '../types/canonical.ts';
 
 const WEB_VERSION = '0.1.0';
-const AGENTS_COMMIT = 'ff0f1753d1a5a8867425f1a6143fb44a4f26c574';
 
 function outputPathForRoute(root: string, route: string): string {
   if (route === '/404.html') return path.join(root, '404.html');
@@ -134,8 +133,6 @@ export async function buildSite(options: BuildOptions): Promise<{ rootDigest: st
     specCommit: options.specCommit,
     knowledgeCommit: options.knowledgeCommit,
     webCommit: options.webCommit,
-    compatibleAgentsVersion: '0.1.0',
-    agentsCommit: AGENTS_COMMIT,
     builtAt: new Date(options.sourceDateEpoch * 1000).toISOString(),
     publicBaseUrl: baseUrl,
     mode: options.mode,

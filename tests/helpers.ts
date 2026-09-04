@@ -4,7 +4,7 @@ import path from 'node:path';
 import { canonicalJson, sha256 } from '../src/build/canonical-json.ts';
 import type { BuildOptions } from '../src/types/canonical.ts';
 
-export const SPEC_COMMIT = '8f79e8c2a1ba2caaaf418549fe0c4cf5ef4399fe';
+export const SPEC_COMMIT = 'eddd4f0cdc5caef169cf6be40a00f526ef6752f4';
 export const KNOWLEDGE_COMMIT = '10202813c19357533fab0d85e309574bacd7e143';
 export const WEB_COMMIT = '1111111111111111111111111111111111111111';
 
